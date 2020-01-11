@@ -12,10 +12,7 @@ class Sum {
     }
 
     String oddOrEven() {
-        if (input == null || input.isEmpty()) {
-            return 'even'
-        }
-        return input.sum() % 2 == 0 ? 'even' : 'odd'
+        return (!input || input.sum() % 2 == 0) ? 'even' : 'odd'
     }
 
 }
