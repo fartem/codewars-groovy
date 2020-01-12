@@ -12,9 +12,7 @@ class ElevatorDistance {
     }
 
     Integer distance() {
-        return (0..<floors.size()).collect {
-            return it != 0 ? Math.abs(floors[it - 1] - floors[it]) : 0
-        }.sum() as Integer
+        return floors.collate(2, 1, false).sum { Math.abs(it[0] - it[1]) } as Integer
     }
 
 }
