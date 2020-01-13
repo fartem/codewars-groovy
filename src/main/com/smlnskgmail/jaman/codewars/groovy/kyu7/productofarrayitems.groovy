@@ -9,9 +9,9 @@ class ArrayProduct {
     }
 
     Integer product() {
-        return !array
-                ? null
-                : array.stream().reduce(1, { i1, i2 -> i1 * i2 })
+        return array
+                ? array.inject { mul, acc -> mul * acc }
+                : null
     }
 
 }
