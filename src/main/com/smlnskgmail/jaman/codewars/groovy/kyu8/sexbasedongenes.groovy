@@ -12,9 +12,7 @@ class Gender {
     }
 
     String basedOnChromosomes() {
-        return chromosomes.contains("Y")
-                ? "Congratulations! You're going to have a son."
-                : "Congratulations! You're going to have a daughter."
+        return "Congratulations! You're going to have a ${chromosomes.contains("Y") ? "son" : "daughter"}."
     }
 
 }
