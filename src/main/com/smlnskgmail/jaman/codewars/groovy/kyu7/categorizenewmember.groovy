@@ -12,9 +12,7 @@ class Club {
     }
 
     List categorized() {
-        members.stream()
-                .map({ it -> it[0] >= 55 && it[1] > 7 ? "Senior" : "Open" })
-                .collect()
+        members.collect { age, handicap -> age >= 55 && handicap > 7 ? 'Senior' : 'Open' }
     }
 
 }

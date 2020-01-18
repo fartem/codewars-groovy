@@ -4,7 +4,7 @@ class ClubTest extends GroovyTestCase {
 
     void testCategorized() {
         assertEquals(
-                ["Open", "Senior", "Open", "Senior"],
+                ['Open', 'Senior', 'Open', 'Senior'],
                 new Club(
                         [
                                 new Tuple(45, 12),
@@ -15,7 +15,7 @@ class ClubTest extends GroovyTestCase {
                 ).categorized()
         )
         assertEquals(
-                ["Open", "Open", "Senior", "Open"],
+                ['Open', 'Open', 'Senior', 'Open'],
                 new Club(
                         [
                                 new Tuple(16, 23),
