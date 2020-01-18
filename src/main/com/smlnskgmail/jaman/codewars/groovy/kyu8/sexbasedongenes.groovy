@@ -5,9 +5,9 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu8
 * */
 class Gender {
 
-    private String chromosomes
+    private chromosomes
 
-    Gender(String chromosomes) {
+    Gender(chromosomes) {
         this.chromosomes = chromosomes
     }
 

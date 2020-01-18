@@ -5,10 +5,10 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu8
 * */
 class Count {
 
-    Integer number
-    Integer count
+    private number
+    private count
 
-    Count(Integer number, Integer count) {
+    Count(number, count) {
         this.number = number
         this.count = count
     }
@@ -18,7 +18,7 @@ class Count {
         (1..count).forEach {
             result << it * number
         }
-        return result
+        result
     }
 
 }

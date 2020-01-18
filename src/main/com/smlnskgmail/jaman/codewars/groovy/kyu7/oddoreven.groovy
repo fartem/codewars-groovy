@@ -5,14 +5,14 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 * */
 class Sum {
 
-    private List input
+    private input
 
-    Sum(List input) {
+    Sum(input) {
         this.input = input
     }
 
     String oddOrEven() {
-        return (!input || input.sum() % 2 == 0) ? 'even' : 'odd'
+        (!input || input.sum() % 2 == 0) ? 'even' : 'odd'
     }
 
 }

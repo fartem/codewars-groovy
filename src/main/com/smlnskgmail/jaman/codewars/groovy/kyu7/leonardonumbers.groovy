@@ -5,17 +5,12 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 * */
 class LeonardoNumbers {
 
-    private int counter
-    private int l0
-    private int l1
-    private int addNumber
+    private counter
+    private l0
+    private l1
+    private addNumber
 
-    LeonardoNumbers(
-            int counter,
-            int l0,
-            int l1,
-            int addNumber
-    ) {
+    LeonardoNumbers(counter, l0, l1, addNumber) {
         this.counter = counter
         this.l0 = l0
         this.l1 = l1
@@ -27,7 +22,7 @@ class LeonardoNumbers {
         (2..<counter).forEach {
             result << result[it - 1] + result[it - 2] + addNumber
         }
-        return result
+        result
     }
 
 }

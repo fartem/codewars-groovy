@@ -5,14 +5,14 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 * */
 class ElevatorDistance {
 
-    private List<Integer> floors
+    private floors
 
-    ElevatorDistance(List<Integer> floors) {
+    ElevatorDistance(floors) {
         this.floors = floors
     }
 
     Integer distance() {
-        return floors.collate(2, 1, false).sum { Math.abs(it[0] - it[1]) } as Integer
+        floors.collate(2, 1, false).sum { Math.abs(it[0] - it[1]) }
     }
 
 }
