@@ -13,7 +13,7 @@ class ArrayDiff {
     }
 
     List<Integer> result() {
-        return firstArray.stream().filter { !secondArray.contains(it) }.collect()
+        return firstArray - secondArray
     }
 
 }
