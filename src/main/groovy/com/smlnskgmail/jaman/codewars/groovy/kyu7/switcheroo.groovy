@@ -5,21 +5,20 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 * */
 class ABSwitch {
 
-    private String input
+    private input
 
-    ABSwitch(String input) {
+    ABSwitch(input) {
         this.input = input
     }
 
     String result() {
-        return input.collectReplacements {
+        input.collectReplacements {
             switch (it) {
                 case 'a':
                     'b'
                     break
                 case 'b':
                     'a'
-                    break
             }
         }
     }

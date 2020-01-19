@@ -5,16 +5,16 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu6
 * */
 class ArrayDiff {
 
-    private List<Integer> firstArray
-    private List<Integer> secondArray
+    private firstArray
+    private secondArray
 
     ArrayDiff(firstArray, secondArray) {
         this.firstArray = firstArray
         this.secondArray = secondArray
     }
 
-    List<Integer> result() {
-        return firstArray - secondArray
+    List result() {
+        firstArray - secondArray
     }
 
 }

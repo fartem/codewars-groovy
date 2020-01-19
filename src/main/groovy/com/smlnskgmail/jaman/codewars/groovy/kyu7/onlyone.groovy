@@ -5,14 +5,14 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 * */
 class OnlyOne {
 
-    private boolean[] input
+    private input
 
     OnlyOne(boolean[] input) {
         this.input = input
     }
 
     boolean result() {
-        return input.count(true) == 1
+        input.count(true) == 1
     }
 
 }
