@@ -19,6 +19,7 @@ class ABSwitch {
                     break
                 case 'b':
                     'a'
+                    break
             }
         }
     }
