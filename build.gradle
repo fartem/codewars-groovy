@@ -1,5 +1,6 @@
 plugins {
     id 'groovy'
+    id "com.diffplug.gradle.spotless" version "3.27.1"
 }
 
 repositories {
@@ -10,4 +11,12 @@ dependencies {
     implementation 'org.codehaus.groovy:groovy-all:2.4.17'
 
     testImplementation 'junit:junit:4.13'
+}
+
+spotless {
+    groovy {
+        greclipse().configFile(
+                rootProject.file('greclipse.properties')
+        )
+    }
 }
