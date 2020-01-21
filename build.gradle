@@ -15,6 +15,15 @@ dependencies {
 
 spotless {
     groovy {
+        def greclipseConfig = new File("$rootDir/greclipse.properties")
+        new URL(
+                "https://raw.githubusercontent.com/fartem/repository-rules/master/groovy/groovy-eclipse/greclipse.properties"
+        ).withInputStream {
+            i -> greclipseConfig.withOutputStream {
+                it << i
+            }
+        }
+
         greclipse().configFile(
                 rootProject.file('greclipse.properties')
         )
