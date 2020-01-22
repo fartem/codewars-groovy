@@ -1,8 +1,8 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
 /*
-* https://www.codewars.com/kata/52efefcbcdf57161d4000091
-* */
+ * https://www.codewars.com/kata/52efefcbcdf57161d4000091
+ * */
 class Characters {
 
 	private String input
@@ -12,7 +12,6 @@ class Characters {
 	}
 
 	Map count() {
-		input.toList()
-				.inject([:]) { map, v -> map << [(v):((map.get(v) ?: 0) + 1)] }
+		input.iterator().countBy { it }
 	}
 }
