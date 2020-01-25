@@ -1,15 +1,14 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu5
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/523d2e964680d1f749000135
- * */
+ */
+@TupleConstructor
 class CustomArray {
 
-	private List<List> arrays
-
-	CustomArray(List ...arrays) {
-		this.arrays = arrays
-	}
+	List[] arrays
 
 	List interleaving() {
 		def result = []
@@ -23,4 +22,5 @@ class CustomArray {
 		}
 		result
 	}
+
 }

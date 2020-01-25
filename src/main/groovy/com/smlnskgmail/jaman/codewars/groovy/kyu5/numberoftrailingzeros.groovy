@@ -1,15 +1,14 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu5
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/52f787eb172a8b4ae1000a34
- * */
+ */
+@TupleConstructor
 class TrailingZeros {
 
-	private number
-
-	TrailingZeros(number) {
-		this.number = number
-	}
+	Integer number
 
 	Integer zerosCount() {
 		Integer result = 0
@@ -18,4 +17,5 @@ class TrailingZeros {
 		}
 		result
 	}
+
 }

@@ -1,21 +1,17 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/5b2117eea454c89d4400005f
- * */
+ */
+@TupleConstructor
 class LeonardoNumbers {
 
-	private counter
-	private l0
-	private l1
-	private addNumber
-
-	LeonardoNumbers(counter, l0, l1, addNumber) {
-		this.counter = counter
-		this.l0 = l0
-		this.l1 = l1
-		this.addNumber = addNumber
-	}
+	Integer counter
+	Integer l0
+	Integer l1
+	Integer addNumber
 
 	List forCount() {
 		List result = [l0, l1]
@@ -24,4 +20,5 @@ class LeonardoNumbers {
 		}
 		result
 	}
+
 }

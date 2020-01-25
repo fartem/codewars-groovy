@@ -1,15 +1,14 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/57f759bb664021a30300007d
- * */
+ */
+@TupleConstructor
 class ABSwitch {
 
-	private input
-
-	ABSwitch(input) {
-		this.input = input
-	}
+	String input
 
 	String result() {
 		input.collectReplacements {
@@ -23,4 +22,5 @@ class ABSwitch {
 			}
 		}
 	}
+
 }

@@ -4,5 +4,6 @@ before_install:
   - chmod +x gradlew
 
 script:
+  - ./gradlew codenarcMain
+  - ./gradlew cpdCheck
   - ./gradlew test
-  - ./gradlew spotlessCheck

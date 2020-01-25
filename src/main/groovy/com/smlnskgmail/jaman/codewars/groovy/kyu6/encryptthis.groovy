@@ -1,15 +1,14 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/5848565e273af816fb000449
- * */
+ */
+@TupleConstructor
 class Crypt {
 
-	private String input
-
-	Crypt(input) {
-		this.input = input
-	}
+	String input
 
 	String encrypt() {
 		input.split(' ').collect {
@@ -23,4 +22,5 @@ class Crypt {
 			}
 		}.join(' ')
 	}
+
 }

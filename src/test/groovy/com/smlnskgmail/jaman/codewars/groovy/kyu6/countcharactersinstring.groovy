@@ -6,10 +6,11 @@ class CharactersTest extends GroovyTestCase {
 		assertEquals(
 				['a': 2, 'b': 1],
 				new Characters('aba').count()
-				)
+		)
 		assertEquals(
 				[:],
 				new Characters('').count()
-				)
+		)
 	}
+
 }

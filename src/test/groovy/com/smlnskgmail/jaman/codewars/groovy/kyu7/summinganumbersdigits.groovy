@@ -6,14 +6,15 @@ class NumbersSumTest extends GroovyTestCase {
 		assertEquals(
 				1,
 				new NumbersSum(10).value()
-				)
+		)
 		assertEquals(
 				18,
 				new NumbersSum(99).value()
-				)
+		)
 		assertEquals(
 				5,
 				new NumbersSum(-32).value()
-				)
+		)
 	}
+
 }

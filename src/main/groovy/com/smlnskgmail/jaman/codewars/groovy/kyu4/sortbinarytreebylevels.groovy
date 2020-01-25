@@ -1,15 +1,14 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu4
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/52bef5e3588c56132c0003bc
- * */
+ */
+@TupleConstructor
 class SortedTree {
 
-	private node
-
-	SortedTree(node) {
-		this.node = node
-	}
+	Node node
 
 	List toList() {
 		def result = []
@@ -30,17 +29,14 @@ class SortedTree {
 		}
 		result
 	}
+
 }
 
+@TupleConstructor
 class Node {
 
-	Integer value
 	Node left
 	Node right
+	Integer value
 
-	Node(left, right, value) {
-		this.value = value
-		this.left = left
-		this.right = right
-	}
 }

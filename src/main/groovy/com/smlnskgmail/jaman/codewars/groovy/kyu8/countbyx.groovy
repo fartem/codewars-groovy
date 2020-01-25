@@ -1,17 +1,15 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu8
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/5513795bd3fafb56c200049e
- * */
+ */
+@TupleConstructor
 class Count {
 
-	private number
-	private count
-
-	Count(number, count) {
-		this.number = number
-		this.count = count
-	}
+	Integer number
+	Integer count
 
 	List result() {
 		List result = []
@@ -20,4 +18,5 @@ class Count {
 		}
 		result
 	}
+
 }

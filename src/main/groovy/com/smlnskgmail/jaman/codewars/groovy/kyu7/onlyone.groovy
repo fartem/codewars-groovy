@@ -1,17 +1,17 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/5734c38da41454b7f700106e
- * */
+ */
+@TupleConstructor
 class OnlyOne {
 
-	private input
-
-	OnlyOne(boolean[] input) {
-		this.input = input
-	}
+	Boolean[] input
 
 	boolean result() {
-		input.count(true) == 1
+		input && input.count(true) == 1
 	}
+
 }

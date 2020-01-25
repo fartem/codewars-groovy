@@ -1,15 +1,14 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
+import groovy.transform.TupleConstructor
+
 /*
  * https://www.codewars.com/kata/5583d268479559400d000064
- * */
+ */
+@TupleConstructor
 class Text {
 
-	private input
-
-	Text(input) {
-		this.input = input
-	}
+	String input
 
 	String fromBinary() {
 		input.toList()
@@ -19,4 +18,5 @@ class Text {
 				.collect()
 				.join('')
 	}
+
 }

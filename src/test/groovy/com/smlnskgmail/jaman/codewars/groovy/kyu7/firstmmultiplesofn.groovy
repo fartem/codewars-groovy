@@ -6,6 +6,7 @@ class MultipleTest extends GroovyTestCase {
 		assertEquals(
 				[5, 10, 15],
 				new Multiple(3, 5).result()
-				)
+		)
 	}
+
 }

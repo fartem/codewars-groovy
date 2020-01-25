@@ -6,10 +6,11 @@ class GrasshopperTest extends GroovyTestCase {
 		assertEquals(
 				'10 is above freezing temperature',
 				Grasshopper.weatherInfo(50)
-				)
+		)
 		assertEquals(
 				'-5 is freezing temperature',
 				Grasshopper.weatherInfo(23)
-				)
+		)
 	}
+
 }

@@ -1,6 +1,7 @@
 plugins {
     id 'groovy'
-    id "com.diffplug.gradle.spotless" version "3.27.1"
+    id 'codenarc'
+    id 'de.aaschmid.cpd' version '2.0'
 }
 
 repositories {
@@ -13,19 +14,27 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 }
 
-spotless {
-    groovy {
-        def greclipseConfig = new File("$rootDir/greclipse.properties")
-        new URL(
-                "https://raw.githubusercontent.com/fartem/repository-rules/master/groovy/groovy-eclipse/greclipse.properties"
-        ).withInputStream {
-            i -> greclipseConfig.withOutputStream {
-                it << i
-            }
-        }
+codenarc {
+    toolVersion = '1.4'
+}
 
-        greclipse().configFile(
-                rootProject.file('greclipse.properties')
-        )
+codenarcMain {
+    def codenarcRules = new File("$rootDir/codenarc-rules.groovy")
+    new URL(
+            'https://raw.githubusercontent.com/fartem/repository-rules/master/groovy/codenarc/codenarc.groovy'
+    ).withInputStream {
+        i -> codenarcRules.withOutputStream {
+            it << i
+        }
     }
+    configFile = codenarcRules
+}
+
+cpd {
+    language = 'groovy'
+    toolVersion = '6.20.0'
+}
+
+cpdCheck {
+    source = files('src/main/groovy')
 }
