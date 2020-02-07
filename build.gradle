@@ -21,7 +21,7 @@ codenarc {
 codenarcMain {
     def codenarcRules = new File("$rootDir/codenarc-rules.groovy")
     new URL(
-            'https://raw.githubusercontent.com/fartem/repository-rules/master/groovy/codenarc/codenarc.groovy'
+            'https://raw.githubusercontent.com/fartem/repository-rules/master/rules/groovy/codenarc/codenarc.groovy'
     ).withInputStream {
         i -> codenarcRules.withOutputStream {
             it << i
