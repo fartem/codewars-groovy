@@ -5,15 +5,15 @@ class NumbersSumTest extends GroovyTestCase {
 	void testSum() {
 		assertEquals(
 				1,
-				new NumbersSum(10).value()
+				new SummingANumbersDigits(10).solution()
 		)
 		assertEquals(
 				18,
-				new NumbersSum(99).value()
+				new SummingANumbersDigits(99).solution()
 		)
 		assertEquals(
 				5,
-				new NumbersSum(-32).value()
+				new SummingANumbersDigits(-32).solution()
 		)
 	}
 

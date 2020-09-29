@@ -5,9 +5,9 @@ class BMWRemoverTest extends GroovyTestCase {
     void testResult() {
         assertEquals(
                 'volvo',
-                new BMWRemover(
+                new RemoveBMW(
                         'bmwvolvoBMW'
-                ).result()
+                ).solution()
         )
     }
 

@@ -2,15 +2,13 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/5949481f86420f59480000e7
- */
+// https://www.codewars.com/kata/5949481f86420f59480000e7
 @TupleConstructor
-class Sum {
+class OddOrEven {
 
 	List input
 
-	String oddOrEven() {
+	String solution() {
 		(!input || input.sum() % 2 == 0) ? 'even' : 'odd'
 	}
 

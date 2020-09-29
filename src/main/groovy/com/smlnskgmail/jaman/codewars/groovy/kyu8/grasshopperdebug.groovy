@@ -1,11 +1,9 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu8
 
-/*
- * https://www.codewars.com/kata/55cb854deb36f11f130000e1
- */
-class Grasshopper {
+// https://www.codewars.com/kata/55cb854deb36f11f130000e1
+class GrasshopperDebug {
 
-	static weatherInfo(temp) {
+	static solution(temp) {
 		Integer c = convertToCelsius(temp)
 		"$c ${c > 0 ? 'is above freezing temperature' : 'is freezing temperature'}"
 	}

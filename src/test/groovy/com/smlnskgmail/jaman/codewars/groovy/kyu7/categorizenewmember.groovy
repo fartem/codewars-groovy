@@ -10,14 +10,14 @@ class ClubTest extends GroovyTestCase {
 					'Open',
 					'Senior'
 				],
-				new Club(
+				new CategorizeNewMember(
 						[
 								new Tuple(45, 12),
 								new Tuple(55, 21),
 								new Tuple(19, -2),
 								new Tuple(104, 20)
 						]
-				).categorized()
+				).solution()
 		)
 		assertEquals(
 				[
@@ -26,14 +26,14 @@ class ClubTest extends GroovyTestCase {
 					'Senior',
 					'Open'
 				],
-				new Club(
+				new CategorizeNewMember(
 						[
 								new Tuple(16, 23),
 								new Tuple(73, 1),
 								new Tuple(56, 20),
 								new Tuple(1, -1)
 						]
-				).categorized()
+				).solution()
 		)
 	}
 

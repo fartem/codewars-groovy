@@ -2,15 +2,13 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/5848565e273af816fb000449
- */
+// https://www.codewars.com/kata/5848565e273af816fb000449
 @TupleConstructor
-class Crypt {
+class EncryptThis {
 
 	String input
 
-	String encrypt() {
+	String solution() {
 		input.split(' ').collect {
 			if (it) {
 				def prefix = it.codePointAt(0)

@@ -5,23 +5,24 @@ class CustomArrayTest extends GroovyTestCase {
 	void testInterleaving() {
 		assertEquals(
 				[1, "c", 2, "d", 3, "e"],
-				new CustomArray([1, 2, 3], ["c", "d", "e"]).interleaving()
-				)
+				new InterleavingArrays([1, 2, 3], ["c", "d", "e"]).solution()
+		)
 		assertEquals(
 				[1, 4, 2, 5, 3, null],
-				new CustomArray([1, 2, 3], [4, 5]).interleaving()
-				)
+				new InterleavingArrays([1, 2, 3], [4, 5]).solution()
+		)
 		assertEquals(
 				[1, 4, 7, 2, 5, 8, 3, 6, 9],
-				new CustomArray([1, 2, 3], [4, 5, 6], [7, 8, 9]).interleaving()
-				)
+				new InterleavingArrays([1, 2, 3], [4, 5, 6], [7, 8, 9]).solution()
+		)
 		assertEquals(
 				[],
-				new CustomArray([]).interleaving()
-				)
+				new InterleavingArrays([]).solution()
+		)
 		assertEquals(
 				[],
-				new CustomArray().interleaving()
-				)
+				new InterleavingArrays().solution()
+		)
 	}
+
 }

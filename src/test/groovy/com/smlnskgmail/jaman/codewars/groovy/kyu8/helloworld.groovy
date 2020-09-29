@@ -5,7 +5,7 @@ class GreetTest extends GroovyTestCase {
 	void testResult() {
 		assertEquals(
 				'hello world!',
-				new Greet().greet()
+				new Greet().solution()
 		)
 	}
 

@@ -5,19 +5,19 @@ class OnlyOneTest extends GroovyTestCase {
 	void testResult() {
 		assertEquals(
 				false,
-				new OnlyOne().result()
+				new OnlyOne().solution()
 		)
 		assertEquals(
 				true,
-				new OnlyOne(true, false, false).result()
+				new OnlyOne(true, false, false).solution()
 		)
 		assertEquals(
 				false,
-				new OnlyOne(true, false, false, true).result()
+				new OnlyOne(true, false, false, true).solution()
 		)
 		assertEquals(
 				false,
-				new OnlyOne(false, false, false, false).result()
+				new OnlyOne(false, false, false, false).solution()
 		)
 	}
 

@@ -2,15 +2,13 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/5583d268479559400d000064
- */
+// https://www.codewars.com/kata/5583d268479559400d000064
 @TupleConstructor
-class Text {
+class BinaryToText {
 
 	String input
 
-	String fromBinary() {
+	String solution() {
 		input.toList()
 				.collate(8)
 				.stream()

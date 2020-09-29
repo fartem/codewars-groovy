@@ -5,38 +5,38 @@ class PresentsTest extends GroovyTestCase {
     void testHowManyCounts() {
         assertEquals(
                 4,
-                new Presents(
+                new ListOfPresents(
                         20,
                         [13, 2, 4, 6, 1]
-                ).howManyGifts()
+                ).solution()
         )
         assertEquals(
                 8,
-                new Presents(
+                new ListOfPresents(
                         90,
                         [87, 3, 5, 25, 1, 3, 4, 6, 20]
-                ).howManyGifts()
+                ).solution()
         )
         assertEquals(
                 9,
-                new Presents(
+                new ListOfPresents(
                         100,
                         [6, 94, 10, 45, 2, 4, 5, 6, 8, 1]
-                ).howManyGifts()
+                ).solution()
         )
         assertEquals(
                 0,
-                new Presents(
+                new ListOfPresents(
                         0,
                         [1]
-                ).howManyGifts()
+                ).solution()
         )
         assertEquals(
                 12,
-                new Presents(
+                new ListOfPresents(
                         90,
                         [10, 10, 10, 10, 10, 10, 5, 5, 5, 5, 5, 5]
-                ).howManyGifts()
+                ).solution()
         )
     }
 

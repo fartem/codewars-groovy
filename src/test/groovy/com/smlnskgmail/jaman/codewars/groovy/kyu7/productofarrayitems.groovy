@@ -5,27 +5,27 @@ class ArrayProductTest extends GroovyTestCase {
 	void testProduct() {
 		assertEquals(
 				540,
-				new ArrayProduct([5, 4, 1, 3, 9]).product()
+				new ProductOfArrayItems([5, 4, 1, 3, 9]).solution()
 		)
 		assertEquals(
 				-672,
-				new ArrayProduct([-2, 6, 7, 8]).product()
+				new ProductOfArrayItems([-2, 6, 7, 8]).solution()
 		)
 		assertEquals(
 				10,
-				new ArrayProduct([10]).product()
+				new ProductOfArrayItems([10]).solution()
 		)
 		assertEquals(
 				0,
-				new ArrayProduct([0, 2, 9, 7]).product()
+				new ProductOfArrayItems([0, 2, 9, 7]).solution()
 		)
 		assertEquals(
 				null,
-				new ArrayProduct(null).product()
+				new ProductOfArrayItems(null).solution()
 		)
 		assertEquals(
 				null,
-				new ArrayProduct([]).product()
+				new ProductOfArrayItems([]).solution()
 		)
 	}
 

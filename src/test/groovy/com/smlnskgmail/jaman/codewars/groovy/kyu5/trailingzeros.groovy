@@ -5,15 +5,15 @@ class TrailingZerosTest extends GroovyTestCase {
 	void testZeros() {
 		assertEquals(
 				0,
-				new TrailingZeros(0).zerosCount()
+				new NumberOfTrailingZeros(0).solution()
 		)
 		assertEquals(
 				1,
-				new TrailingZeros(6).zerosCount()
+				new NumberOfTrailingZeros(6).solution()
 		)
 		assertEquals(
 				26875438,
-				new TrailingZeros(107501768).zerosCount()
+				new NumberOfTrailingZeros(107501768).solution()
 		)
 	}
 

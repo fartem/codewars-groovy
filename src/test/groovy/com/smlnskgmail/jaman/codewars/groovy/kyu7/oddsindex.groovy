@@ -4,19 +4,19 @@ class OddTest extends GroovyTestCase {
 
     void testOddBall() {
         assertTrue(
-                new Odd(
+                new OddsIndex(
                         ["even", 4, "even", 7, "even", 55, "even", 6, "even", 10, "odd", 3, "even"]
-                ).oddBall()
+                ).solution()
         )
         assertFalse(
-                new Odd(
+                new OddsIndex(
                         ["even", 4, "even", 7, "even", 55, "even", 6, "even", 9, "odd", 3, "even"]
-                ).oddBall()
+                ).solution()
         )
         assertTrue(
-                new Odd(
+                new OddsIndex(
                         ["even", 10, "odd", 2, "even"]
-                ).oddBall()
+                ).solution()
         )
     }
 

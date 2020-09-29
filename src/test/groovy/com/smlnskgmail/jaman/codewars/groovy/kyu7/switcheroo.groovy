@@ -5,23 +5,23 @@ class ABSwitchTest extends GroovyTestCase {
 	void testResult() {
 		assertEquals(
 				'bac',
-				new ABSwitch('abc').result()
+				new Switcheroo('abc').solution()
 		)
 		assertEquals(
 				'bbbacccabbb',
-				new ABSwitch('aaabcccbaaa').result()
+				new Switcheroo('aaabcccbaaa').solution()
 		)
 		assertEquals(
 				'ccccc',
-				new ABSwitch('ccccc').result()
+				new Switcheroo('ccccc').solution()
 		)
 		assertEquals(
 				'babababababababa',
-				new ABSwitch('abababababababab').result()
+				new Switcheroo('abababababababab').solution()
 		)
 		assertEquals(
 				'bbbbb',
-				new ABSwitch('aaaaa').result()
+				new Switcheroo('aaaaa').solution()
 		)
 	}
 

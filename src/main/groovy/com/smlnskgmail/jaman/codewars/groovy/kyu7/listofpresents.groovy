@@ -2,16 +2,14 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/5a84d485742ba347b90006b7
- */
+// https://www.codewars.com/kata/5a84d485742ba347b90006b7
 @TupleConstructor
-class Presents {
+class ListOfPresents {
 
     Integer maxBudget
     List gifts
 
-    Integer howManyGifts() {
+    Integer solution() {
         if (!gifts || !maxBudget) {
             return 0
         }

@@ -2,15 +2,13 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu5
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/523d2e964680d1f749000135
- */
+// https://www.codewars.com/kata/523d2e964680d1f749000135
 @TupleConstructor
-class CustomArray {
+class InterleavingArrays {
 
 	List[] arrays
 
-	List interleaving() {
+	List solution() {
 		def result = []
 		if (arrays) {
 			def iterators = arrays.collect { it.iterator() }

@@ -2,15 +2,13 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu4
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/52bef5e3588c56132c0003bc
- */
+// https://www.codewars.com/kata/52bef5e3588c56132c0003bc
 @TupleConstructor
-class SortedTree {
+class SortBinaryTreeByLevels {
 
 	Node node
 
-	List toList() {
+	List solution() {
 		def result = []
 		if (node != null) {
 			def tree = [node] as Queue

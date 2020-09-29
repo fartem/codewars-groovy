@@ -5,23 +5,23 @@ class CountTest extends GroovyTestCase {
 	void testResult() {
 		assertEquals(
 				[1, 2, 3, 4, 5],
-				new Count(1, 5).result()
+				new CountByX(1, 5).solution()
 		)
 		assertEquals(
 				[2, 4, 6, 8, 10],
-				new Count(2, 5).result()
+				new CountByX(2, 5).solution()
 		)
 		assertEquals(
 				[3, 6, 9, 12, 15],
-				new Count(3, 5).result()
+				new CountByX(3, 5).solution()
 		)
 		assertEquals(
 				[50, 100, 150, 200, 250],
-				new Count(50, 5).result()
+				new CountByX(50, 5).solution()
 		)
 		assertEquals(
 				[100, 200, 300, 400, 500],
-				new Count(100, 5).result()
+				new CountByX(100, 5).solution()
 		)
 	}
 

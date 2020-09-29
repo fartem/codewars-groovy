@@ -2,16 +2,17 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
 import groovy.transform.TupleConstructor
 
-/*
- * https://www.codewars.com/kata/52f3149496de55aded000410
- */
+// https://www.codewars.com/kata/52f3149496de55aded000410
 @TupleConstructor
-class NumbersSum {
+class SummingANumbersDigits {
 
 	Integer number
 
-	Integer value() {
-		Math.abs(number).toString().split('').sum { it -> Integer.valueOf(it) } as Integer
+	Integer solution() {
+		Math.abs(number)
+				.toString()
+				.split('')
+				.sum { it -> Integer.valueOf(it) } as Integer
 	}
 
 }

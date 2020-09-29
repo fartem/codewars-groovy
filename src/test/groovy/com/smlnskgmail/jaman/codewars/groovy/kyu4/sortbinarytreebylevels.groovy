@@ -5,11 +5,11 @@ class SortedTreeTest extends GroovyTestCase {
 	void testToList() {
 		assertEquals(
 				[],
-				new SortedTree(null).toList()
-				)
+				new SortBinaryTreeByLevels(null).solution()
+		)
 		assertEquals(
 				[1, 2, 3, 4, 5, 6],
-				new SortedTree(
+				new SortBinaryTreeByLevels(
 						new Node(
 								new Node(
 										null,
@@ -35,7 +35,7 @@ class SortedTreeTest extends GroovyTestCase {
 								),
 								1
 						)
-				).toList()
+				).solution()
 		)
 	}
 

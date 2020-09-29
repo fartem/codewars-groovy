@@ -5,7 +5,7 @@ class MultipleTest extends GroovyTestCase {
 	void testResult() {
 		assertEquals(
 				[5, 10, 15],
-				new Multiple(3, 5).result()
+				new FirstMMultiplesOfN(3, 5).solution()
 		)
 	}
 

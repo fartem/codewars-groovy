@@ -5,39 +5,39 @@ class HungarianVowelsHarmonyTest extends GroovyTestCase {
     void testDative() {
         assertEquals(
                 'ablaknak',
-                new HungarianVowelsHarmony('ablak').dative()
+                new HungarianVowelsHarmonyEasy('ablak').solution()
         )
         assertEquals(
                 'tükörnek',
-                new HungarianVowelsHarmony('tükör').dative()
+                new HungarianVowelsHarmonyEasy('tükör').solution()
         )
         assertEquals(
                 'keretnek',
-                new HungarianVowelsHarmony('keret').dative()
+                new HungarianVowelsHarmonyEasy('keret').solution()
         )
         assertEquals(
                 'otthonnak',
-                new HungarianVowelsHarmony('otthon').dative()
+                new HungarianVowelsHarmonyEasy('otthon').solution()
         )
         assertEquals(
                 'virágnak',
-                new HungarianVowelsHarmony('virág').dative()
+                new HungarianVowelsHarmonyEasy('virág').solution()
         )
         assertEquals(
                 'tettnek',
-                new HungarianVowelsHarmony('tett').dative()
+                new HungarianVowelsHarmonyEasy('tett').solution()
         )
         assertEquals(
                 'rokkantnak',
-                new HungarianVowelsHarmony('rokkant').dative()
+                new HungarianVowelsHarmonyEasy('rokkant').solution()
         )
         assertEquals(
                 'rossznak',
-                new HungarianVowelsHarmony('rossz').dative()
+                new HungarianVowelsHarmonyEasy('rossz').solution()
         )
         assertEquals(
                 'gonosznak',
-                new HungarianVowelsHarmony('gonosz').dative()
+                new HungarianVowelsHarmonyEasy('gonosz').solution()
         )
     }
 

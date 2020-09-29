@@ -5,23 +5,23 @@ class ArrayDiffTest extends GroovyTestCase {
 	void testResult() {
 		assertEquals(
 				[2],
-				new ArrayDiff([1, 2], [1]).result()
+				new ArrayDiff([1, 2], [1]).solution()
 		)
 		assertEquals(
 				[2, 2],
-				new ArrayDiff([1, 2, 2], [1]).result()
+				new ArrayDiff([1, 2, 2], [1]).solution()
 		)
 		assertEquals(
 				[1],
-				new ArrayDiff([1, 2, 2], [2]).result()
+				new ArrayDiff([1, 2, 2], [2]).solution()
 		)
 		assertEquals(
 				[1, 2, 2],
-				new ArrayDiff([1, 2, 2], []).result()
+				new ArrayDiff([1, 2, 2], []).solution()
 		)
 		assertEquals(
 				[],
-				new ArrayDiff([], [1, 2]).result()
+				new ArrayDiff([], [1, 2]).solution()
 		)
 	}
 
