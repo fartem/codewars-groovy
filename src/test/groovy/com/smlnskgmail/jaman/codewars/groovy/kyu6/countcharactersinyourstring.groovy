@@ -5,11 +5,11 @@ class CharactersTest extends GroovyTestCase {
 	void testCount() {
 		assertEquals(
 				['a': 2, 'b': 1],
-				new CountCharactersInString('aba').solution()
+				new CountCharactersInYourString('aba').solution()
 		)
 		assertEquals(
 				[:],
-				new CountCharactersInString('').solution()
+				new CountCharactersInYourString('').solution()
 		)
 	}
 

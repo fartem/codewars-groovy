@@ -4,7 +4,7 @@ import groovy.transform.TupleConstructor
 
 // https://www.codewars.com/kata/5583d268479559400d000064
 @TupleConstructor
-class BinaryToText {
+class BinaryToTextASCIIConversion {
 
 	String input
 

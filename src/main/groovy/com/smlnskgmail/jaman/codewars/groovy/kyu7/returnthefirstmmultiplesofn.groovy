@@ -4,7 +4,7 @@ import groovy.transform.TupleConstructor
 
 // https://www.codewars.com/kata/593c9175933500f33400003e
 @TupleConstructor
-class FirstMMultiplesOfN {
+class ReturnTheFirstMMultiplesOfN {
 
 	Integer m
 	Integer n

@@ -1,11 +1,11 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu8
 
-class GreetTest extends GroovyTestCase {
+class FunctionOneHelloWorldTest extends GroovyTestCase {
 
 	void testResult() {
 		assertEquals(
 				'hello world!',
-				new Greet().solution()
+				new FunctionOneHelloWorld().solution()
 		)
 	}
 
