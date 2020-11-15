@@ -22,6 +22,8 @@ Profile on Codewars: https://www.codewars.com/users/fartem.
 
 ### 7 kyu
 
+| Name | Link to Codewars | Link to solution |
+| --- | --- | --- |
 | Categorize New Member | [Link](https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu7/categorizenewmember.groovy) |
 | Elevator Distance | [Link](https://www.codewars.com/kata/59f061773e532d0c87000d16) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu7/elevatordistance.groovy) |
 | Hungarian Vowel Harmony (easy) | [Link](https://www.codewars.com/kata/57fd696e26b06857eb0011e7) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu7/hungarianvowelharmonyeasy.groovy) |
@@ -39,6 +41,8 @@ Profile on Codewars: https://www.codewars.com/users/fartem.
 
 ### 6 kyu
 
+| Name | Link to Codewars | Link to solution |
+| --- | --- | --- |
 | Array.diff | [Link](https://www.codewars.com/kata/523f5d21c841566fde000009) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu6/arraydiff.groovy) |
 | Binary to Text (ASCII) Conversion | [Link](https://www.codewars.com/kata/5583d268479559400d000064) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu6/binarytotextasciiconversion.groovy) |
 | Count characters in your string | [Link](https://www.codewars.com/kata/52efefcbcdf57161d4000091) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu6/countcharactersinyourstring.groovy) |
@@ -46,8 +50,13 @@ Profile on Codewars: https://www.codewars.com/users/fartem.
 
 ### 5 kyu
 
+| Name | Link to Codewars | Link to solution |
+| --- | --- | --- |
 | Interleaving Arrays | [Link](https://www.codewars.com/kata/523d2e964680d1f749000135) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu5/interleavingarrays.groovy) |
 | Number of trailing zeros of N! | [Link](https://www.codewars.com/kata/52f787eb172a8b4ae1000a34) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu5/numberoftrailingzeros.groovy) |
 
 ### 4 kyu
+
+| Name | Link to Codewars | Link to solution |
+| --- | --- | --- |
 | Sort binary tree by levels | [Link](https://www.codewars.com/kata/52bef5e3588c56132c0003bc) | [Link](https://github.com/fartem/codewars-groovy/blob/master/src/main/groovy/com/smlnskgmail/jaman/codewars/groovy/kyu4/sortbinarytreebylevels.groovy) |
