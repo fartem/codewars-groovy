@@ -2,6 +2,7 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
 class ArrayDiffTest extends GroovyTestCase {
 
+	@SuppressWarnings("DuplicateListLiteral")
 	void testResult() {
 		assertEquals(
 				[2],

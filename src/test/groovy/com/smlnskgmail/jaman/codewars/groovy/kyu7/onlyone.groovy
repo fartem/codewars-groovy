@@ -2,21 +2,18 @@ package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
 class OnlyOneTest extends GroovyTestCase {
 
+	@SuppressWarnings("DuplicateListLiteral")
 	void testResult() {
-		assertEquals(
-				false,
+		assertFalse(
 				new OnlyOne().solution()
 		)
-		assertEquals(
-				true,
+		assertTrue(
 				new OnlyOne(true, false, false).solution()
 		)
-		assertEquals(
-				false,
+		assertFalse(
 				new OnlyOne(true, false, false, true).solution()
 		)
-		assertEquals(
-				false,
+		assertFalse(
 				new OnlyOne(false, false, false, false).solution()
 		)
 	}

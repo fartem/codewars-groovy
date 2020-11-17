@@ -32,6 +32,18 @@ codenarcMain {
     configFile = codenarcRules
 }
 
+codenarcTest {
+    def codenarcRules = new File("$rootDir/codenarc-rules.groovy")
+    new URL(
+            'https://raw.githubusercontent.com/fartem/repository-rules/master/rules/groovy/codenarc/codenarc.groovy'
+    ).withInputStream {
+        i -> codenarcRules.withOutputStream {
+            it << i
+        }
+    }
+    configFile = codenarcRules
+}
+
 cpd {
     language = 'groovy'
     toolVersion = '6.20.0'

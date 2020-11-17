@@ -1,7 +1,8 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class CharacterTest extends GroovyTestCase {
+class OrderedCountOfCharactersTest extends GroovyTestCase {
 
+    @SuppressWarnings("DuplicateListLiteral")
     void testOrderedCount() {
         assertEquals(
                 [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]],

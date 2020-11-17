@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class BMWRemoverTest extends GroovyTestCase {
+class RemoveBMWTest extends GroovyTestCase {
 
     void testResult() {
         assertEquals(

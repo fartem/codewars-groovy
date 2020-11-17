@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
-class CharactersTest extends GroovyTestCase {
+class CountCharactersInYourStringTest extends GroovyTestCase {
 
 	void testCount() {
 		assertEquals(

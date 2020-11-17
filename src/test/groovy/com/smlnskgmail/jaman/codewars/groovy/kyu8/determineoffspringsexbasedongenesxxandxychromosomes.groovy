@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu8
 
-class GenderTest extends GroovyTestCase {
+class DetermineOffspringSexBasedOnGenesXXAndXYChromosomesTest extends GroovyTestCase {
 
 	void testBasedOnChromosomes() {
 		assertEquals(

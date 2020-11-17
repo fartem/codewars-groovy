@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class ABSwitchTest extends GroovyTestCase {
+class SwitcherooTest extends GroovyTestCase {
 
 	void testResult() {
 		assertEquals(

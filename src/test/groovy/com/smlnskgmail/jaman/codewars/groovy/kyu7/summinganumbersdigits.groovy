@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class NumbersSumTest extends GroovyTestCase {
+class SummingANumbersDigitsTest extends GroovyTestCase {
 
 	void testSum() {
 		assertEquals(

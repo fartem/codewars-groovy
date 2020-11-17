@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu8
 
-class CountTest extends GroovyTestCase {
+class CountByXTest extends GroovyTestCase {
 
 	void testResult() {
 		assertEquals(

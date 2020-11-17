@@ -8,6 +8,7 @@ class RemoveBMW {
 
     def input
 
+    @SuppressWarnings("Instanceof")
     String solution() {
         if (!(input instanceof String)) {
             throw new IllegalArgumentException(

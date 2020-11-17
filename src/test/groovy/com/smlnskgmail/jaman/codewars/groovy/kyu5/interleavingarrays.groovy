@@ -1,7 +1,8 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu5
 
-class CustomArrayTest extends GroovyTestCase {
+class InterleavingArraysTest extends GroovyTestCase {
 
+	@SuppressWarnings("DuplicateListLiteral")
 	void testInterleaving() {
 		assertEquals(
 				[1, "c", 2, "d", 3, "e"],

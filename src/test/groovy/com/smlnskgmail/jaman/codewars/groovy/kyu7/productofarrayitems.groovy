@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class ArrayProductTest extends GroovyTestCase {
+class ProductOfArrayItemsTest extends GroovyTestCase {
 
 	void testProduct() {
 		assertEquals(
@@ -19,12 +19,10 @@ class ArrayProductTest extends GroovyTestCase {
 				0,
 				new ProductOfArrayItems([0, 2, 9, 7]).solution()
 		)
-		assertEquals(
-				null,
+		assertNull(
 				new ProductOfArrayItems(null).solution()
 		)
-		assertEquals(
-				null,
+		assertNull(
 				new ProductOfArrayItems([]).solution()
 		)
 	}

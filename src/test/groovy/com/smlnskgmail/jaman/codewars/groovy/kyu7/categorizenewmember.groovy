@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class ClubTest extends GroovyTestCase {
+class CategorizeNewMemberTest extends GroovyTestCase {
 
 	void testCategorized() {
 		assertEquals(

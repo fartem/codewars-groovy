@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class OddTest extends GroovyTestCase {
+class OddsIndexTest extends GroovyTestCase {
 
     void testOddBall() {
         assertTrue(

@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
-class CryptTest extends GroovyTestCase {
+class EncryptThisTest extends GroovyTestCase {
 
 	void testEncrypt() {
 		assertEquals(

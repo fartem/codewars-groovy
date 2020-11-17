@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu6
 
-class TextTest extends GroovyTestCase {
+class BinaryToTextASCIIConversionTest extends GroovyTestCase {
 
 	void testFromBinary() {
 		assertEquals(

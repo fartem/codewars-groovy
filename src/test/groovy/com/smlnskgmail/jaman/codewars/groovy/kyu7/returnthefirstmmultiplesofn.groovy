@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class MultipleTest extends GroovyTestCase {
+class ReturnTheFirstMMultiplesOfNTest extends GroovyTestCase {
 
 	void testResult() {
 		assertEquals(

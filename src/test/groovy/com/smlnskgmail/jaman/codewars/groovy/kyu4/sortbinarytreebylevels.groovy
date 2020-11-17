@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu4
 
-class SortedTreeTest extends GroovyTestCase {
+class SortBinaryTreeByLevelsTest extends GroovyTestCase {
 
 	void testToList() {
 		assertEquals(

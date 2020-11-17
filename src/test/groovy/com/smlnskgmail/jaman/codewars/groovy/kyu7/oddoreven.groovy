@@ -1,7 +1,8 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class SumTest extends GroovyTestCase {
+class OddOrEvenTest extends GroovyTestCase {
 
+    @SuppressWarnings("DuplicateListLiteral")
 	void testOddOrEven() {
 		assertEquals(
 				'even',

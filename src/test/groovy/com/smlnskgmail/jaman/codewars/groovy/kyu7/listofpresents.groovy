@@ -1,6 +1,6 @@
 package com.smlnskgmail.jaman.codewars.groovy.kyu7
 
-class PresentsTest extends GroovyTestCase {
+class ListOfPresentsTest extends GroovyTestCase {
 
     void testHowManyCounts() {
         assertEquals(
