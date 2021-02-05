@@ -21,12 +21,15 @@ codenarc {
 }
 
 codenarcMain {
-    def codenarcRules = new File("$rootDir/codenarc-rules.groovy")
-    new URL(
-            'https://raw.githubusercontent.com/fartem/repository-rules/master/rules/groovy/codenarc/codenarc.groovy'
-    ).withInputStream {
-        i -> codenarcRules.withOutputStream {
-            it << i
+    def codenarcRulesPath = "$rootDir/codenarc-rules.groovy"
+    def codenarcRules = new File(codenarcRulesPath)
+    if (!codenarcRules.exists()) {
+        new URL(
+                'https://raw.githubusercontent.com/fartem/repository-rules/master/rules/groovy/codenarc/codenarc.groovy'
+        ).withInputStream {
+            i -> codenarcRules.withOutputStream {
+                it << i
+            }
         }
     }
     configFile = codenarcRules
